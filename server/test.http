@@ -1,0 +1,10 @@
+POST http://localhost:3000/addFoodItem
+Content-Type: application/json
+
+{
+    "foodName":"belamAnnam",
+    "price":"30"
+}
+
+###
+GET http://localhost:3000/getFoodItems

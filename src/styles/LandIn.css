@@ -1,0 +1,9 @@
+.cards{
+    border: 2px solid rgb(175, 165, 165);
+    border-radius: 5px;
+    box-shadow: 3px 5px #090808;
+    margin:15px;
+    width:400px;
+    padding:5px;
+    text-align:center;
+}
