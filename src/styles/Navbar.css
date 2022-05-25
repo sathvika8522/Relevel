@@ -1,24 +1,12 @@
-body {margin:0}
-
-.iconBar {
-  width: 70px;
-  background-color: #dac7c7;
-  height: 100vh;
+.navbar {
+  background-color: #e8f2f6;
+  color:white;
 }
-
-.iconBar a {
-  display: block;
-  text-align: center;
-  padding: 15px;
-  transition: all 0.5s ease;
-  color: rgb(20, 1, 1);
-  font-size: 35px;
-}
-
-.iconBar a:hover {
+.navbar a:hover {
   background-color: #83c8eb;
 }
 
 .active {
-  background-color: #92dff0;
+  background-color: #f6f6f8;
+  color:white;
 }

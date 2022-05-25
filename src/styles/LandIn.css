@@ -1,9 +1,17 @@
-.cards{
-    border: 2px solid rgb(175, 165, 165);
+.landInContainer{
+    padding: 10px;
+    background-color: aliceblue;
+}
+input{
+    display: inline;
+    width:1100px;
+    padding: 5px;
     border-radius: 5px;
-    box-shadow: 3px 5px #090808;
-    margin:15px;
-    width:400px;
-    padding:5px;
-    text-align:center;
+}
+
+.form{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-left:70px ;
 }

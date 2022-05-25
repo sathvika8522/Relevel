@@ -15,26 +15,27 @@ const Login = () => {
 
   const submitDetails = async(event) => {
       event.preventDefault()
-      console.log(user)
+    //   console.log(user)
       
-      const res=await fetch("/login",{
-          method:"POST",
-          headers:{
-              "Content-Type":"application/json",
-              "Accept": "application/json"
-          },
-          body:JSON.stringify(user)
-      })
+    //   const res=await fetch("/login",{
+    //       method:"POST",
+    //       headers:{
+    //           "Content-Type":"application/json",
+    //           "Accept": "application/json"
+    //       },
+    //       body:JSON.stringify(user)
+    //   })
 
-      const data=await res.json();
-      console.log(data)
-      if(data.message==="User logged successfully"){
-          alert(data.message)
-          navigate("/Home")
-      }
-      else{
-          alert(data.message)
-      }
+    //   const data=await res.json();
+    //   console.log(data)
+    //   if(data.message==="User logged successfully"){
+    //       alert(data.message)
+    //       navigate("/Home")
+    //   }
+    //   else{
+    //       alert(data.message)
+    //   }
+      navigate("/jobs")
   }
 
   return (

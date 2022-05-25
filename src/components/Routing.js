@@ -4,6 +4,7 @@ import Home from "./Home"
 import LandInPage from "./LandInPage"
 import Signup from "./Signup"
 import Login from "./Login"
+import Jobs from './Jobs'
 
 export const Routing = () => {
   return (
@@ -13,6 +14,7 @@ export const Routing = () => {
          <Route path="home" element={<Home />} />
          <Route path="signup" element={<Signup />} />
          <Route path="Login" element={<Login />} />
+         <Route path="jobs" element={<Jobs />} />
       </Routes>
     </>
   )

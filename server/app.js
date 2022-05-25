@@ -1,19 +1,19 @@
-const exp = require('express')
-const app = exp()
-const mongoose = require('mongoose')
-const cors = require('cors')
-const dotenv = require('dotenv')
-dotenv.config({path:'./config.env'}) 
+const exp=require('express')
+const app=exp()
+const mongoose=require('mongoose')
+const User=require('./models/userSchema')
+const cookieParser = require('cookie-parser')
+const dotenv=require('dotenv')
+dotenv.config({path:'./config.env'});
 
-/*---------------------------- MiddleWares--------------------------*/
+/*------------To convert json object to understandable form-------------*/
 app.use(exp.json())
-app.use(cors())
+app.use(cookieParser())
+//-----------Routes--------------
+app.use(require('./routes/authentication'))
 
-/*----------------------------- Routing middlewares-----------------*/
-app.use(require('./Routes/wishList'))
-
-
-const dburl = process.env.DBURL
+//----------connecting to database--------
+const dburl=process.env.DATABASEURL;
 mongoose.connect(dburl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -25,5 +25,6 @@ mongoose.connect(dburl, {
     console.log("Error connecting to mongo.", err);
 });
 
-const port = process.env.PORT
-app.listen(port,()=>{console.log(`port listening on ${port}..........`)})
+//------------Assinging port number---------
+const port=process.env.portNumber
+app.listen(port,()=>{console.log(`Server is running on port ${port}................`)})

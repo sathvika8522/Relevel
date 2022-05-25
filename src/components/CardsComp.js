@@ -1,5 +1,6 @@
 import React from 'react'
-import "../styles/LandIn.css"
+import "../styles/Cardcomp.css"
+import "../styles/LandIn.css";
 
 const CardsComp = () => {
   return (
@@ -7,6 +8,7 @@ const CardsComp = () => {
      <div className="card-controls">
         <div className="content">
             <h5>Software Engineer</h5>
+            <hr />
             <p>Need of software Engineer</p>
         </div>
      </div>
